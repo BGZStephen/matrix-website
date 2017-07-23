@@ -1,3 +1,26 @@
-<p>
-  dashboard-login works!
-</p>
+<div class="main-container">
+  <div class="login-container">
+    <div class="logo-container">
+      <img src="assets/images/logo.png">
+    </div>
+    <form class="login-form" #f="ngForm" (ngSubmit)="login(f.value)">
+      <div class="form-row">
+        <div class="logo-container user-logo-container">
+          <i class="fa fa-user"></i>
+        </div>
+        <input type="text" class="form-input" placeholder="Email address">
+      </div>
+      <div class="form-row">
+        <div class="logo-container password-logo-container">
+          <i class="fa fa-lock"></i>
+        </div>
+        <input type="password" class="form-input" placeholder="Password">
+      </div>
+      <hr class="form-seperator">
+      <div class="buttons-container">
+        <button class="form-button form-reset-password">Reset password</button>
+        <button [routerLink]="['dashboard']" class="form-button form-login">Login</button>
+      </div>
+    </form>
+  </div>
+</div>

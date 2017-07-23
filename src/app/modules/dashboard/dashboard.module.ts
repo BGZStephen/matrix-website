@@ -2,7 +2,15 @@ import { CommonModule } from '@angular/common';
 import { HttpModule } from '@angular/http';
 import { FormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
-import { DashboardLoginComponent } from './components/dashboard-login/dashboard-login.component';
+
+// router
+import { AppRoutes } from '../../app.routes';
+
+// components
+import {
+  DashboardLoginComponent, DashboardWrapperComponent, DashboardNavbarComponent, DashboardHomeComponent,
+  DashboardNotificationBarComponent
+} from './components/dashboard-components-barrel';
 
 @NgModule({
   declarations: [

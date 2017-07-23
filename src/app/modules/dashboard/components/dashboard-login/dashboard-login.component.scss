@@ -1,0 +1,99 @@
+@import '../../../../styles/sass/main';
+
+.main-container {
+  background: $primary-background-blue;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+.login-container {
+  border-top: 2px solid lighten($primary-background-blue, 10%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 12% 0 20px;
+  max-width: 480px;
+  width: 90%;
+
+  .logo-container {
+    margin: 25px 0;
+  }
+
+  .login-form {
+    width: 100%;
+  }
+
+  .form-row {
+    align-items: center;
+    display: flex;
+    height: 40px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  .form-input {
+    border: none;
+    background: white;
+    font-size: 0.9em;
+    height: 100%;
+    padding: 0 5px;
+    width: calc(100% - 40px);
+    @media(min-width: $screen-m) {
+      font-size: 1em;
+    }
+  }
+
+  .form-seperator {
+    border: none;
+    border-top: 2px solid lighten($primary-background-blue, 10%);
+    width: 100%;
+  }
+
+  .logo-container {
+    align-items: center;
+    color: white;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    width: 40px;
+  }
+
+  .user-logo-container {
+    background: $primary-green;
+  }
+
+  .password-logo-container {
+    background: $primary-yellow;
+  }
+
+  .buttons-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+    width: 90%;
+  }
+
+  .form-button {
+    border: none;
+    padding: 10px 20px;
+    font-size: 0.9em;
+    @media(min-width: $screen-m) {
+      font-size: 1em;
+    }
+  }
+
+  .form-login {
+    background: $primary-button-blue;
+    border-bottom: 4px solid darken($primary-button-blue, 15%);
+    border-right: 4px solid darken($primary-button-blue, 35%);
+  }
+
+  .form-reset-password {
+    background: $primary-button-green;
+    border-bottom: 4px solid darken($primary-button-green, 15%);
+    border-right: 4px solid darken($primary-button-green, 35%);
+  }
+}
