@@ -1,0 +1,87 @@
+@import '../../../../styles/sass/main';
+
+.main-container {
+  width: 100%;
+}
+
+.navbar {
+  background: $primary-background-blue;
+  height: 35px;
+  position: absolute;
+  top: 70px;
+  width: 100%;
+  @media(min-width: $screen-m) {
+    height: 100vh;
+    position: relative;
+    top: 0px;
+  }
+}
+
+.logo-container {
+  display: none;
+  @media(min-width: $screen-m) {
+    align-items: center;
+    background: $primary-background-black;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.logo {
+
+}
+
+.top-level-nav {
+  align-items: center;
+  background: $primary-navbar-blue;
+  display: flex;
+  flex-direction: column;
+  height: 35px;
+  overflow: hidden;
+  padding: 0 10px;
+  width: 100%;
+  @media(min-width: $screen-m) {
+    background: none;
+    height: 50px;
+    overflow: visible;
+    padding: 0;
+  }
+}
+
+.top-level-item {
+  color: $primary-navbar-grey;
+  height: 35px;
+  transition: 0.3s ease all;
+  width: 100%;
+  > .item-content {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    > i {
+      margin-right: 10px;
+    }
+    > .fa-bars {
+      margin-left: auto;
+      margin-right: 0;
+      @media(min-width: $screen-m) {
+        display: none;
+      }
+    }
+  }
+  @media(min-width: $screen-m) {
+    height: 50px;
+    padding: 0 15px;
+    width: 100%;
+    > .item-content {
+      > i {
+        margin-right: 15px;
+      }
+    }
+  }
+  &:hover {
+    background: $primary-navbar-blue;
+    color: black;
+  }
+}
