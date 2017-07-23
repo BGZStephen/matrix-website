@@ -9,26 +9,22 @@
 }
 
 .navbar-container {
-  height: 40px;
   width: 100%;
   @media(min-width: $screen-m) {
-    width: 200px;
-    min-height: 100vh;
+    width: 220px;
   }
 }
 
 .notification-bar-container {
-  display: none;
+  width: 100%;
   @media(min-width: $screen-m) {
-    display: block;
-    height: 40px;
+    width: calc(100vw - 220px);
   }
 }
 
 .output-container {
-  min-height: calc(100vh - 40px);
   width: 100%;
   @media(min-width: $screen-m) {
-    width: calc(100% - 200px);
+    width: calc(100vw - 220px);
   }
 }
