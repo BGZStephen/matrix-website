@@ -14,11 +14,17 @@ import {
 
 @NgModule({
   declarations: [
-  DashboardLoginComponent],
+    DashboardLoginComponent,
+    DashboardWrapperComponent,
+    DashboardNavbarComponent,
+    DashboardHomeComponent,
+    DashboardNotificationBarComponent,
+  ],
   imports: [
     CommonModule,
     HttpModule,
     FormsModule,
+    AppRoutes,
   ],
   providers: [],
 })
