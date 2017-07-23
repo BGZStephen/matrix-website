@@ -19,7 +19,7 @@
       <hr class="form-seperator">
       <div class="buttons-container">
         <button class="form-button form-reset-password">Reset password</button>
-        <button [routerLink]="['dashboard']" class="form-button form-login">Login</button>
+        <button (click)="login()" class="form-button form-login">Login</button>
       </div>
     </form>
   </div>

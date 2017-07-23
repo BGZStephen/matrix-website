@@ -7,7 +7,9 @@ import {
 const APP_ROUTES: Routes = [
   {path: '', component: DashboardLoginComponent},
   {path: 'dashboard', component: DashboardWrapperComponent, children: [
-    {path: '', component: DashboardHomeComponent}
+    {path: '', redirectTo: 'home', pathMatch: 'full'},
+    {path: 'home', component: DashboardHomeComponent, outlet: 'dashboardOutlet'},
+    {path: 'testing', component: DashboardHomeComponent, outlet: 'dashboardOutlet'},
   ]},
 ]
 

@@ -1,0 +1,34 @@
+@import '../../../../styles/sass/main';
+
+.main-container {
+  align-content: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+.navbar-container {
+  height: 40px;
+  width: 100%;
+  @media(min-width: $screen-m) {
+    width: 200px;
+    min-height: 100vh;
+  }
+}
+
+.notification-bar-container {
+  display: none;
+  @media(min-width: $screen-m) {
+    display: block;
+    height: 40px;
+  }
+}
+
+.output-container {
+  min-height: calc(100vh - 40px);
+  width: 100%;
+  @media(min-width: $screen-m) {
+    width: calc(100% - 200px);
+  }
+}
