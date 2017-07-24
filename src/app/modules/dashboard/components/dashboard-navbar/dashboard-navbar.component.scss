@@ -54,24 +54,11 @@
 .top-level-item {
   background: $primary-navbar-blue;
   height: 35px;
-  padding: 0 10px;
   transition: 0.3s ease all;
   width: 100%;
-  > .item-content {
-    align-items: center;
-    display: flex;
-    height: 100%;
-    width: 100%;
-    > i {
-      margin-right: 10px;
-    }
-    > .fa-bars {
-      margin-left: auto;
-      margin-right: 0;
-      @media(min-width: $screen-m) {
-        display: none;
-      }
-    }
+  &:hover {
+    background: $primary-navbar-blue;
+    color: black;
   }
   @media(min-width: $screen-m) {
     background: none;
@@ -79,14 +66,26 @@
     height: 50px;
     padding: 0 15px;
     width: 100%;
-    > .item-content {
-      > i {
-        margin-right: 15px;
-      }
-    }
   }
-  &:hover {
-    background: $primary-navbar-blue;
-    color: black;
+}
+
+.top-level-item-content {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  padding: 0 10px;
+  width: 100%;
+}
+
+.fa {
+  width: 35px;
+}
+
+.fa-bars {
+  margin-left: auto;
+  margin-right: 0;
+  width: auto;
+  @media(min-width: $screen-m) {
+    display: none;
   }
 }
