@@ -10,6 +10,7 @@ export class DashboardNavbarComponent implements OnInit {
   constructor() { }
 
   navbarVisible = false;
+  activeSubmenu: number = -1;
 
   navbarStyle() {
     if(!this.navbarVisible) {
@@ -20,8 +21,31 @@ export class DashboardNavbarComponent implements OnInit {
     }
   }
 
+  submenuStyle(index) {
+    if(this.activeSubmenu === index) {
+      let pixels
+      if(screen.width > 1024) {
+        pixels = 50;
+      } else {
+        pixels = 35;
+      }
+      const height = document.getElementsByClassName('top-level-item')[index].getElementsByClassName('second-level-nav')[0].children.length * pixels + 'px'
+      return {'min-height': height, 'max-height': 'auto'}
+    } else {
+      return {'min-height': '0', 'max-height': '0'}
+    }
+  }
+
   toggleNavbarVisible() {
     this.navbarVisible = !this.navbarVisible
+  }
+
+  setActiveSubmenu(index) {
+    if(this.activeSubmenu === index) {
+      this.activeSubmenu = -1;
+    } else {
+      this.activeSubmenu = index;
+    }
   }
 
   ngOnInit() {

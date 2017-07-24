@@ -36,11 +36,11 @@
         </div>
       </li>
       <li class="top-level-item">
-        <div class="top-level-item-content">
+        <div class="top-level-item-content" (click)="setActiveSubmenu(5)">
           <i class="fa fa-th-list"></i>
           <p class="item-header">Forms</p>
         </div>
-        <ul class="second-level-nav">
+        <ul class="second-level-nav" [ngStyle]="submenuStyle(5)">
           <li class="second-level-item">
             <div class="second-level-item-content">
               <i class="fa fa-th-list"></i>
