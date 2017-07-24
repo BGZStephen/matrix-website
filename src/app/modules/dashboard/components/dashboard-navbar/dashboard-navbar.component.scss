@@ -10,6 +10,9 @@
   position: absolute;
   top: 70px;
   width: 100%;
+  @media(min-width: $screen-xs) {
+    top: 40px;
+  }
   @media(min-width: $screen-m) {
     height: 100vh;
     position: relative;
@@ -34,12 +37,11 @@
 
 .top-level-nav {
   align-items: center;
-  background: $primary-navbar-blue;
   display: flex;
   flex-direction: column;
-  height: 35px;
+  min-height: 35px;
   overflow: hidden;
-  padding: 0 10px;
+  transition: 0.5s ease all;
   width: 100%;
   @media(min-width: $screen-m) {
     background: none;
@@ -50,8 +52,9 @@
 }
 
 .top-level-item {
-  color: $primary-navbar-grey;
+  background: $primary-navbar-blue;
   height: 35px;
+  padding: 0 10px;
   transition: 0.3s ease all;
   width: 100%;
   > .item-content {
@@ -71,6 +74,8 @@
     }
   }
   @media(min-width: $screen-m) {
+    background: none;
+    color: $primary-navbar-grey;
     height: 50px;
     padding: 0 15px;
     width: 100%;
