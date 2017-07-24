@@ -4,67 +4,75 @@
       <img class="logo" src="/assets/images/logo.png">
     </div>
     <ul class="top-level-nav" [ngStyle]="navbarStyle()">
-      <div class="top-level-item">
+      <li class="top-level-item">
         <div class="top-level-item-content">
           <i class="fa fa-home"></i>
           <p class="item-header">Dashboard</p>
           <i class="fa fa-bars" (click)="toggleNavbarVisible()"></i>
         </div>
-      </div>
-      <div class="top-level-item">
+      </li>
+      <li class="top-level-item">
         <div class="top-level-item-content">
           <i class="fa fa-bar-chart"></i>
           <p class="item-header">Charts & Graphs</p>
         </div>
-      </div>
-      <div class="top-level-item">
+      </li>
+      <li class="top-level-item">
         <div class="top-level-item-content">
           <i class="fa fa-inbox"></i>
           <p class="item-header">Widgets</p>
         </div>
-      </div>
-      <div class="top-level-item">
+      </li>
+      <li class="top-level-item">
         <div class="top-level-item-content">
           <i class="fa fa-table"></i>
           <p class="item-header">Tables</p>
         </div>
-      </div>
-      <div class="top-level-item">
+      </li>
+      <li class="top-level-item">
         <div class="top-level-item-content">
           <i class="fa fa-arrows-alt"></i>
           <p class="item-header">Full-width</p>
         </div>
-      </div>
-      <div class="top-level-item">
+      </li>
+      <li class="top-level-item">
         <div class="top-level-item-content">
           <i class="fa fa-th-list"></i>
           <p class="item-header">Forms</p>
         </div>
-      </div>
-      <div class="top-level-item">
+        <ul class="second-level-nav">
+          <li class="second-level-item">
+            <div class="second-level-item-content">
+              <i class="fa fa-th-list"></i>
+              <p class="item-header">Forms</p>
+            </div>
+          </li>
+        </ul>
+      </li>
+      <li class="top-level-item">
         <div class="top-level-item-content">
           <i class="fa fa-tint"></i>
           <p class="item-header">Buttons & Icons</p>
         </div>
-      </div>
-      <div class="top-level-item">
+      </li>
+      <li class="top-level-item">
         <div class="top-level-item-content">
           <i class="fa fa-pencil"></i>
           <p class="item-header">Elements</p>
         </div>
-      </div>
-      <div class="top-level-item">
+      </li>
+      <li class="top-level-item">
         <div class="top-level-item-content">
           <i class="fa fa-file"></i>
           <p class="item-header">Addons</p>
         </div>
-      </div>
-      <div class="top-level-item">
+      </li>
+      <li class="top-level-item">
         <div class="top-level-item-content">
           <i class="fa fa-info-circle"></i>
           <p class="item-header">Error</p>
         </div>
-      </div>
+      </li>
     </ul>
   </div>
 </div>
