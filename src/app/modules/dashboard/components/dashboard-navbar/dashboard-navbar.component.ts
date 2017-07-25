@@ -17,7 +17,7 @@ export class DashboardNavbarComponent implements OnInit {
       return {'min-height': '35px', 'max-height': '35px'}
     } else {
       const height = document.getElementsByClassName('top-level-nav')[0].children.length * 35 + 'px'
-      return {'min-height': height, 'max-height': 'auto'}
+      return {'min-height': height, 'max-height': '100vh'}
     }
   }
 

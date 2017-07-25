@@ -39,12 +39,22 @@
         <div class="top-level-item-content" (click)="setActiveSubmenu(5)">
           <i class="fa fa-th-list"></i>
           <p class="item-header">Forms</p>
+          <p class="notification-highlight">3</p>
         </div>
         <ul class="second-level-nav" [ngStyle]="submenuStyle(5)">
           <li class="second-level-item">
             <div class="second-level-item-content">
-              <i class="fa fa-th-list"></i>
-              <p class="item-header">Forms</p>
+              <p class="item-header">Basic Form</p>
+            </div>
+          </li>
+          <li class="second-level-item">
+            <div class="second-level-item-content">
+              <p class="item-header">Form with Validation</p>
+            </div>
+          </li>
+          <li class="second-level-item">
+            <div class="second-level-item-content">
+              <p class="item-header">Form with Wizard</p>
             </div>
           </li>
         </ul>
@@ -62,16 +72,67 @@
         </div>
       </li>
       <li class="top-level-item">
-        <div class="top-level-item-content">
+        <div class="top-level-item-content" (click)="setActiveSubmenu(8)">
           <i class="fa fa-file"></i>
           <p class="item-header">Addons</p>
+          <p class="notification-highlight">5</p>
         </div>
+        <ul class="second-level-nav" [ngStyle]="submenuStyle(8)">
+          <li class="second-level-item">
+            <div class="second-level-item-content">
+              <p class="item-header">Dashboard2</p>
+            </div>
+          </li>
+          <li class="second-level-item">
+            <div class="second-level-item-content">
+              <p class="item-header">Gallery</p>
+            </div>
+          </li>
+          <li class="second-level-item">
+            <div class="second-level-item-content">
+              <p class="item-header">Calendar</p>
+            </div>
+          </li>
+          <li class="second-level-item">
+            <div class="second-level-item-content">
+              <p class="item-header">Invoice</p>
+            </div>
+          </li>
+          <li class="second-level-item">
+            <div class="second-level-item-content">
+              <p class="item-header">Chat option</p>
+            </div>
+          </li>
+        </ul>
       </li>
       <li class="top-level-item">
-        <div class="top-level-item-content">
+        <div class="top-level-item-content" (click)="setActiveSubmenu(9)">
           <i class="fa fa-info-circle"></i>
           <p class="item-header">Error</p>
+          <p class="notification-highlight">3</p>
         </div>
+        <ul class="second-level-nav" [ngStyle]="submenuStyle(9)">
+          <li class="second-level-item">
+            <div class="second-level-item-content">
+              <p class="item-header">Error 403</p>
+            </div>
+          </li>
+          <li class="second-level-item">
+            <div class="second-level-item-content">
+              <p class="item-header">Error 404</p>
+            </div>
+          </li>
+          <li class="second-level-item">
+            <div class="second-level-item-content">
+              <p class="item-header">Error 405</p>
+            </div>
+          </li>
+          <li class="second-level-item">
+            <div class="second-level-item-content">
+              <p class="item-header">Error 500</p>
+            </div>
+          </li>
+        </ul>
       </li>
     </ul>
   </div>
