@@ -1,7 +1,10 @@
 @import '../../../../styles/sass/main';
 
 .main-container {
-  padding: 15px 5px;
+  padding: 50px 5px 0 5px;
+  @media(min-width: $screen-xs) {
+    padding: 15px 5px;
+  }
 }
 
 .widgets-container {
@@ -23,13 +26,22 @@
 }
 
 .widget-one {
-  width: 15.583%;
+  width: calc(50% - 10px);
   margin: 0 0 10px 10px;
+  @media(min-width: $screen-m) {
+    width: 15.583%;
+  }
 }
 
 .widget-two {
-  width: 31.166%;
+  width: calc(50% - 10px);
   margin: 0 0 10px 10px;
+  @media(min-width: $screen-m) {
+    width: 15.583%;
+  }
+  @media(min-width: $screen-l) {
+    width: 31.166%;
+  }
 }
 
 .widget-blue {
