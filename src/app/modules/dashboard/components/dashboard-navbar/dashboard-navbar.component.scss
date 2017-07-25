@@ -60,7 +60,8 @@
 
 .top-level-item,
 .second-level-item {
-  background: $primary-navbar-blue;
+  background: $primary-background-blue;
+  color: white;
   cursor: pointer;
   transition: 0.3s ease all;
   width: 100%;
@@ -68,6 +69,20 @@
     background: none;
     color: $primary-navbar-grey;
     width: 100%;
+  }
+}
+
+.second-level-item {
+  background: darken($primary-background-blue, 10%);
+}
+
+.top-level-item:first-of-type {
+  background: $primary-navbar-blue;
+  color: black;
+
+  @media(min-width: $screen-m) {
+    background: $primary-background-blue;
+    color: $primary-navbar-grey;
   }
 }
 
@@ -82,11 +97,18 @@
   &:hover {
     background: $primary-navbar-blue;
     color: black;
+    > .fa {
+      color: black;
+    }
   }
   @media(min-width: $screen-m) {
     height: 50px;
     padding: 0 15px;
   }
+}
+
+.second-level-item-content:hover {
+  background: $primary-green;
 }
 
 .fa {
