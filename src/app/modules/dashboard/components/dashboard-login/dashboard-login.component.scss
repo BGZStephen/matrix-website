@@ -1,7 +1,5 @@
-@import '../../../../styles/sass/main';
-
 .main-container {
-  background: $primary-background-blue;
+  background: $blue-800;
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -10,7 +8,7 @@
 }
 
 .login-container {
-  border-top: 2px solid lighten($primary-background-blue, 10%);
+  border-top: 2px solid $blue-300;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -48,7 +46,7 @@
 
   .form-seperator {
     border: none;
-    border-top: 2px solid lighten($primary-background-blue, 10%);
+    border-top: 2px solid $blue-300;
     width: 100%;
   }
 
@@ -62,11 +60,11 @@
   }
 
   .user-logo-container {
-    background: $primary-green;
+    background: $green-400;
   }
 
   .password-logo-container {
-    background: $primary-yellow;
+    background: $orange-400;
   }
 
   .buttons-container {
@@ -86,14 +84,14 @@
   }
 
   .form-login {
-    background: $primary-button-blue;
-    border-bottom: 4px solid darken($primary-button-blue, 15%);
-    border-right: 4px solid darken($primary-button-blue, 35%);
+    background: $blue-400;
+    border-bottom: 4px solid $blue-500;
+    border-right: 4px solid $blue-600;
   }
 
   .form-reset-password {
-    background: $primary-button-green;
-    border-bottom: 4px solid darken($primary-button-green, 15%);
-    border-right: 4px solid darken($primary-button-green, 35%);
+    background: $green-400;
+    border-bottom: 4px solid $green-500;
+    border-right: 4px solid $green-600;
   }
 }

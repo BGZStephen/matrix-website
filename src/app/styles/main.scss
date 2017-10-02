@@ -1,0 +1,9 @@
+@import './includes/globals';
+@import './variables/colors';
+@import './variables/layout-sizes';
+
+@import '../modules/dashboard/components/dashboard-home/dashboard-home.component';
+@import '../modules/dashboard/components/dashboard-login/dashboard-login.component';
+@import '../modules/dashboard/components/dashboard-navbar/dashboard-navbar.component';
+@import '../modules/dashboard/components/dashboard-notification-bar/dashboard-notification-bar.component';
+@import '../modules/dashboard/components/dashboard-wrapper/dashboard-wrapper.component';

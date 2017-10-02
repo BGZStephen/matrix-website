@@ -1,5 +1,3 @@
-@import '../../../../styles/sass/main';
-
 .main-container {
   padding: 50px 5px 0 5px;
   @media(min-width: $screen-xs) {
@@ -21,7 +19,7 @@
   height: 80px;
   transition: 0.3s ease all;
   &:hover {
-    background: $primary-background-blue;
+    background: $blue-400;
   }
 }
 
@@ -53,7 +51,7 @@
 }
 
 .widget-yellow {
-  background: $primary-yellow;
+  background: $orange-400;
 }
 
 .widget-orange {
@@ -61,7 +59,7 @@
 }
 
 .widget-l-blue {
-  background: $primary-navbar-blue;
+  background: $blue-400;
 }
 
 .widget-red {

@@ -1,11 +1,9 @@
-@import '../../../../styles/sass/main';
-
 .main-container {
   width: 100%;
 }
 
 .navbar {
-  background: $primary-background-blue;
+  background: $blue-400;
   height: 35px;
   position: absolute;
   top: 70px;
@@ -24,7 +22,7 @@
   display: none;
   @media(min-width: $screen-m) {
     align-items: center;
-    background: $primary-background-black;
+    background: $slate-800;
     height: 80px;
     display: flex;
     justify-content: center;
@@ -60,29 +58,29 @@
 
 .top-level-item,
 .second-level-item {
-  background: $primary-background-blue;
+  background: $blue-400;
   color: white;
   cursor: pointer;
   transition: 0.3s ease all;
   width: 100%;
   @media(min-width: $screen-m) {
     background: none;
-    color: $primary-navbar-grey;
+    color: $slate-400;
     width: 100%;
   }
 }
 
 .second-level-item {
-  background: darken($primary-background-blue, 10%);
+  background: $blue-500;
 }
 
 .top-level-item:first-of-type {
-  background: $primary-navbar-blue;
+  background: $blue-400;
   color: black;
 
   @media(min-width: $screen-m) {
-    background: $primary-background-blue;
-    color: $primary-navbar-grey;
+    background: $blue-400;
+    color: $slate-400;
   }
 }
 
@@ -95,7 +93,7 @@
   transition: 0.3s ease all;
   width: 100%;
   &:hover {
-    background: $primary-navbar-blue;
+    background: $blue-400;
     color: black;
     > .fa {
       color: black;
@@ -108,7 +106,7 @@
 }
 
 .second-level-item-content:hover {
-  background: $primary-green;
+  background: $green-400;
 }
 
 .fa {
