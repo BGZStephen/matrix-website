@@ -1,83 +1,83 @@
-.main-container {
+#dashboard-notification-bar {
   width: 100%;
-}
-
-.notification-bar {
-  display: flex;
-  flex-wrap: wrap;
-  height: 70px;
-  @media(min-width: $screen-xs) {
-    flex-wrap: nowrap;
+  
+  .notification-bar {
+    display: flex;
+    flex-wrap: wrap;
+    height: 70px;
+    @media(min-width: $screen-xs) {
+      flex-wrap: nowrap;
+    }
+    @media(min-width: $screen-m) {
+      height: 40px;
+    }
   }
-  @media(min-width: $screen-m) {
+
+  .logo-container {
+    background: $slate-800;
+    display: flex;
     height: 40px;
+    justify-content: center;
+    padding: 8px 0;
+    width: 100%;
+    @media(min-width: $screen-xs) {
+      padding: 8px 15px;
+      width: auto;
+    }
+    @media(min-width: $screen-m) {
+      display: none;
+    }
   }
-}
 
-.logo-container {
-  background: $slate-800;
-  display: flex;
-  height: 40px;
-  justify-content: center;
-  padding: 8px 0;
-  width: 100%;
-  @media(min-width: $screen-xs) {
-    padding: 8px 15px;
-    width: auto;
+  .icons-container {
+    align-items: center;
+    background: $blue-400;
+    color: #999;
+    display: flex;
+    height: 30px;
+    justify-content: center;
+    width: 100%;
+    @media(min-width: $screen-xs) {
+      height: 40px;
+      justify-content: flex-end;
+    }
+    @media(min-width: $screen-m) {
+      justify-content: flex-start;
+    }
   }
-  @media(min-width: $screen-m) {
-    display: none;
-  }
-}
 
-.icons-container {
-  align-items: center;
-  background: $blue-400;
-  color: #999;
-  display: flex;
-  height: 30px;
-  justify-content: center;
-  width: 100%;
-  @media(min-width: $screen-xs) {
-    height: 40px;
-    justify-content: flex-end;
+  .icon-container {
+    align-items: center;
+    border-left: 2px solid $blue-500;
+    display: flex;
+    height: 100%;
+    padding: 0 5px;
+    &:hover {
+      color: white;
+    }
+    &:last-of-type {
+      border-right: 2px solid $blue-500;
+    }
+    @media(min-width: $screen-m) {
+      padding: 0 10px;
+    }
   }
-  @media(min-width: $screen-m) {
-    justify-content: flex-start;
-  }
-}
 
-.icon-container {
-  align-items: center;
-  border-left: 2px solid $blue-500;
-  display: flex;
-  height: 100%;
-  padding: 0 5px;
-  &:hover {
+  .notification-highlight {
+    background: red;
     color: white;
+    font-size: 0.8em;
+    font-weight: bold;
+    margin: 0 3px;
+    padding: 2px 5px;
   }
-  &:last-of-type {
-    border-right: 2px solid $blue-500;
+
+  .fa {
+    font-size: 0.8em;
+    padding: 5px;
   }
-  @media(min-width: $screen-m) {
-    padding: 0 10px;
+
+  .fa-caret-down {
+    padding: 2px;
   }
-}
-
-.notification-highlight {
-  background: red;
-  color: white;
-  font-size: 0.8em;
-  font-weight: bold;
-  margin: 0 3px;
-  padding: 2px 5px;
-}
-
-.fa {
-  font-size: 0.8em;
-  padding: 5px;
-}
-
-.fa-caret-down {
-  padding: 2px;
 }

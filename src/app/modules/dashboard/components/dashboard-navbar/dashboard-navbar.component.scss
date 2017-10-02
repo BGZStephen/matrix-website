@@ -1,132 +1,133 @@
-.main-container {
+#dashboard-navbar {
   width: 100%;
-}
 
-.navbar {
-  background: $blue-400;
-  height: 35px;
-  position: absolute;
-  top: 70px;
-  width: 100%;
-  @media(min-width: $screen-xs) {
-    top: 40px;
-  }
-  @media(min-width: $screen-m) {
-    height: 100vh;
-    position: relative;
-    top: 0px;
-  }
-}
-
-.logo-container {
-  display: none;
-  @media(min-width: $screen-m) {
-    align-items: center;
-    background: $slate-800;
-    height: 80px;
-    display: flex;
-    justify-content: center;
-  }
-}
-
-.logo {
-
-}
-
-.top-level-nav,
-.second-level-nav {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  list-style: none;
-  min-height: 35px;
-  overflow: hidden;
-  transition: 0.5s ease all;
-  width: 100%;
-  @media(min-width: $screen-m) {
-    background: none;
-    overflow: visible;
-    padding: 0;
-  }
-}
-
-.second-level-nav {
-  @media(min-width: $screen-m) {
-    overflow: hidden;
-  }
-}
-
-.top-level-item,
-.second-level-item {
-  background: $blue-400;
-  color: white;
-  cursor: pointer;
-  transition: 0.3s ease all;
-  width: 100%;
-  @media(min-width: $screen-m) {
-    background: none;
-    color: $slate-400;
+  .navbar {
+    background: $blue-400;
+    height: 35px;
+    position: absolute;
+    top: 70px;
     width: 100%;
-  }
-}
-
-.second-level-item {
-  background: $blue-500;
-}
-
-.top-level-item:first-of-type {
-  background: $blue-400;
-  color: black;
-
-  @media(min-width: $screen-m) {
-    background: $blue-400;
-    color: $slate-400;
-  }
-}
-
-.top-level-item-content,
-.second-level-item-content {
-  align-items: center;
-  display: flex;
-  height: 35px;
-  padding: 0 10px;
-  transition: 0.3s ease all;
-  width: 100%;
-  &:hover {
-    background: $blue-400;
-    color: black;
-    > .fa {
-      color: black;
+    @media(min-width: $screen-xs) {
+      top: 40px;
+    }
+    @media(min-width: $screen-m) {
+      height: 100vh;
+      position: relative;
+      top: 0px;
     }
   }
-  @media(min-width: $screen-m) {
-    height: 50px;
-    padding: 0 15px;
-  }
-}
 
-.second-level-item-content:hover {
-  background: $green-400;
-}
-
-.fa {
-  width: 35px;
-}
-
-.fa-bars {
-  margin-left: auto;
-  margin-right: 0;
-  width: auto;
-  @media(min-width: $screen-m) {
+  .logo-container {
     display: none;
+    @media(min-width: $screen-m) {
+      align-items: center;
+      background: $slate-800;
+      height: 80px;
+      display: flex;
+      justify-content: center;
+    }
   }
-}
 
-.notification-highlight {
-  background: red;
-  color: white;
-  font-size: 0.8em;
-  font-weight: bold;
-  margin-left: auto;
-  padding: 2px 5px;
+  .logo {
+
+  }
+
+  .top-level-nav,
+  .second-level-nav {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    min-height: 35px;
+    overflow: hidden;
+    transition: 0.5s ease all;
+    width: 100%;
+    @media(min-width: $screen-m) {
+      background: none;
+      overflow: visible;
+      padding: 0;
+    }
+  }
+
+  .second-level-nav {
+    @media(min-width: $screen-m) {
+      overflow: hidden;
+    }
+  }
+
+  .top-level-item,
+  .second-level-item {
+    background: $blue-400;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease all;
+    width: 100%;
+    @media(min-width: $screen-m) {
+      background: none;
+      color: $slate-400;
+      width: 100%;
+    }
+  }
+
+  .second-level-item {
+    background: $blue-500;
+  }
+
+  .top-level-item:first-of-type {
+    background: $blue-400;
+    color: black;
+
+    @media(min-width: $screen-m) {
+      background: $blue-400;
+      color: $slate-400;
+    }
+  }
+
+  .top-level-item-content,
+  .second-level-item-content {
+    align-items: center;
+    display: flex;
+    height: 35px;
+    padding: 0 10px;
+    transition: 0.3s ease all;
+    width: 100%;
+    &:hover {
+      background: $blue-400;
+      color: black;
+      > .fa {
+        color: black;
+      }
+    }
+    @media(min-width: $screen-m) {
+      height: 50px;
+      padding: 0 15px;
+    }
+  }
+
+  .second-level-item-content:hover {
+    background: $green-400;
+  }
+
+  .fa {
+    width: 35px;
+  }
+
+  .fa-bars {
+    margin-left: auto;
+    margin-right: 0;
+    width: auto;
+    @media(min-width: $screen-m) {
+      display: none;
+    }
+  }
+
+  .notification-highlight {
+    background: red;
+    color: white;
+    font-size: 0.8em;
+    font-weight: bold;
+    margin-left: auto;
+    padding: 2px 5px;
+  }
+
 }

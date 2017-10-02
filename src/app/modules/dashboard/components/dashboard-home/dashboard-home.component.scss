@@ -1,67 +1,67 @@
-.main-container {
+#dashboard-home {
   padding: 50px 5px 0 5px;
   @media(min-width: $screen-xs) {
     padding: 15px 5px;
   }
-}
 
-.widgets-container {
-  display: flex;
-  flex-wrap: wrap;
-}
+  .widgets-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
-.widget {
-  align-items: center;
-  color: white;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  height: 80px;
-  transition: 0.3s ease all;
-  &:hover {
+  .widget {
+    align-items: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 80px;
+    transition: 0.3s ease all;
+    &:hover {
+      background: $blue-400;
+    }
+  }
+
+  .widget-one {
+    width: calc(50% - 10px);
+    margin: 0 0 10px 10px;
+    @media(min-width: $screen-m) {
+      width: 15.583%;
+    }
+  }
+
+  .widget-two {
+    width: calc(50% - 10px);
+    margin: 0 0 10px 10px;
+    @media(min-width: $screen-m) {
+      width: 15.583%;
+    }
+    @media(min-width: $screen-l) {
+      width: 31.166%;
+    }
+  }
+
+  .widget-blue {
+    background: #2255a4;
+  }
+
+  .widget-green {
+    background: #28b779;
+  }
+
+  .widget-yellow {
+    background: $orange-400;
+  }
+
+  .widget-orange {
+    background: #da542e;
+  }
+
+  .widget-l-blue {
     background: $blue-400;
   }
-}
 
-.widget-one {
-  width: calc(50% - 10px);
-  margin: 0 0 10px 10px;
-  @media(min-width: $screen-m) {
-    width: 15.583%;
+  .widget-red {
+    background: #f74d4d;
   }
-}
-
-.widget-two {
-  width: calc(50% - 10px);
-  margin: 0 0 10px 10px;
-  @media(min-width: $screen-m) {
-    width: 15.583%;
-  }
-  @media(min-width: $screen-l) {
-    width: 31.166%;
-  }
-}
-
-.widget-blue {
-  background: #2255a4;
-}
-
-.widget-green {
-  background: #28b779;
-}
-
-.widget-yellow {
-  background: $orange-400;
-}
-
-.widget-orange {
-  background: #da542e;
-}
-
-.widget-l-blue {
-  background: $blue-400;
-}
-
-.widget-red {
-  background: #f74d4d;
 }
