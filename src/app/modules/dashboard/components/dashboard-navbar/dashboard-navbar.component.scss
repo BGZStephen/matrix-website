@@ -2,7 +2,7 @@
   width: 100%;
 
   .navbar {
-    background: $blue-400;
+    background: $slate-700;
     height: 35px;
     position: absolute;
     top: 70px;
@@ -38,12 +38,12 @@
     display: flex;
     flex-direction: column;
     list-style: none;
-    min-height: 35px;
     overflow: hidden;
     transition: 0.5s ease all;
     width: 100%;
     @media(min-width: $screen-m) {
       background: none;
+      font-size: 0.8em;
       overflow: visible;
       padding: 0;
     }
@@ -57,50 +57,53 @@
 
   .top-level-item,
   .second-level-item {
-    background: $blue-400;
+    background: $blue-600;
     color: white;
     cursor: pointer;
     transition: 0.3s ease all;
     width: 100%;
     @media(min-width: $screen-m) {
       background: none;
-      color: $slate-400;
+      color: #DDD;
       width: 100%;
     }
   }
 
   .second-level-item {
-    background: $blue-500;
+    background: $blue-600;
   }
 
   .top-level-item:first-of-type {
-    background: $blue-400;
+    background: $blue-600;
     color: black;
 
     @media(min-width: $screen-m) {
-      background: $blue-400;
-      color: $slate-400;
+      .top-level-item-content {
+        color: black;
+      }
+      background: $blue-600;
+      color: black;
     }
   }
 
   .top-level-item-content,
   .second-level-item-content {
     align-items: center;
+    color: white;
     display: flex;
-    height: 35px;
-    padding: 0 10px;
+    padding: 7px 10px;
     transition: 0.3s ease all;
     width: 100%;
     &:hover {
-      background: $blue-400;
+      background: $blue-600;
       color: black;
       > .fa {
         color: black;
       }
     }
     @media(min-width: $screen-m) {
-      height: 50px;
-      padding: 0 15px;
+      color: white;
+      padding: 12px 20px;
     }
   }
 
@@ -129,5 +132,4 @@
     margin-left: auto;
     padding: 2px 5px;
   }
-
 }
